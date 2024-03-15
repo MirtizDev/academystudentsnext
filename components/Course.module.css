@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Noto+Sans+Oriya:wght@100..900&family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap');
+.course {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 2rem;
+    width: 25rem;
+    height: 35rem;
+    background-color: rgba(128, 141, 147, 0.1);
+    border-radius: 2rem;
+    opacity: 0;
+    transform: translateY(50%);
+    transition: all .7s; }
+    .course__1:hover {
+      background-color: #00325a !important;
+      color: #fff; }
+    .course__2:hover {
+      background-color: #630303 !important;
+      color: #fff; }
+    .course__3:hover {
+      background-color: #699806 !important;
+      color: #fff; }
+    .course__4:hover {
+      background-color: #690e40 !important;
+      color: #fff; }
+    .course__5:hover {
+      background-color: #1f6ddd !important;
+      color: #fff; }
+    .course__6:hover {
+      background-color: #14994f !important;
+      color: #fff; }
+    .course__7:hover {
+      background-color: #d96b4d !important;
+      color: #fff; }
+    .course:hover {
+      transform: translateY(-1rem);
+      background-color: rgba(128, 141, 147, 0.4); }
+    .course__name {
+      font-size: 2rem;
+      font-weight: 400; }
+    .course__img {
+      width: 40%;
+      border-radius: 2rem; }
+    .course__list {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 1rem; }
+    .course__list-item {
+      font-size: 1.4rem;
+      border-bottom: 1px solid rgba(0, 0, 0, 0.1); }
+    .course__price {
+      font-size: 2rem;
+      font-weight: 600; 
+      font-family: "Noto Sans Oriya", sans-serif;}
+    .course__link {
+      text-decoration: none;
+      color: currentColor; }
+  
+  .course.show {
+    opacity: 1 !important;
+    filter: blur(0) !important;
+    transform: translateY(0) !important; }
+  

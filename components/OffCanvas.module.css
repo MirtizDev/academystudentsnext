@@ -1,0 +1,71 @@
+.offcanvas {
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    width: 60%;
+    height: 100vh;
+    z-index: 0; }
+    .offcanvas__btn {
+      background-color: transparent;
+      font-size: 2.5rem;
+      border: none;
+      color: #548ca8; }
+    .offcanvas__body {
+      width: 30%;
+      height: 100vh;
+      background-color: #548ca8;
+      padding: 3rem; }
+    .offcanvas__item {
+      font-size: 2rem;
+      display: flex;
+      gap: 1rem;
+      align-items: center; }
+      .offcanvas__item svg {
+        font-size: 4rem; }
+    .offcanvas__close {
+      position: absolute;
+      z-index: 5;
+      top: 2rem;
+      left: 17rem;
+      border: none;
+      background-color: transparent;
+      outline: none; }
+      .offcanvas__close svg {
+        color: #fff;
+        font-size: 3rem; }
+
+        .nav__item p {
+            font-size: 1.6rem; }
+          .nav__item a:visited,
+          .nav__item a:link {
+            text-decoration: none;
+            color: black !important;
+            font-size: 1.8rem;
+            position: relative;
+            display: inline; }
+          .nav__item a::before {
+            content: '';
+            height: 3px;
+            width: 0%;
+            position: absolute;
+            bottom: -.2rem;
+            left: 0;
+            background-color: #548ca8;
+            transition: all .3s; }
+          .nav__item a:hover::before {
+            width: 100%; }
+
+            .up_btn:visited, .up_btn:link {
+                position: fixed;
+                right: 2rem;
+                bottom: 2rem;
+                text-decoration: none;
+                padding: 2rem;
+                background-color: #548ca8;
+                color: #fff;
+                border-radius: 50%;
+                font-size: 2rem;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                z-index: 5; }            

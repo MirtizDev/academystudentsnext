@@ -1,0 +1,10 @@
+.home__layout {
+    width: 100%;
+    display: flex; }
+  
+  .home__content {
+    width: 100% !important;
+    display: flex;
+    flex-direction: column;
+    margin-left: auto; 
+}

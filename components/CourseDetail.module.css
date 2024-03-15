@@ -1,0 +1,21 @@
+.course-detail {
+    margin-top: 3rem;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    justify-content: center;
+    align-items: center;
+    gap: 5rem; }
+    .course-detail__img {
+      width: 70%;
+      justify-self: end; }
+    .course-detail__content {
+      display: flex;
+      flex-direction: column;
+      gap: 4rem; }
+    .course-detail__name {
+      font-size: 3.5rem; }
+    .course-detail__description {
+      font-size: 2rem; }
+    .course-detail__price {
+      font-size: 2rem;
+      font-weight: 600; }

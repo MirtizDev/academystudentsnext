@@ -1,0 +1,17 @@
+#scrollPath {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 10px;
+  height: 130vh;
+  background: #808d93; }
+
+#progressBar {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 10px;
+  height: 130vh;
+  background: #548ca8;
+  z-index: 2; }
+  

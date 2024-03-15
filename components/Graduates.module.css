@@ -1,0 +1,33 @@
+.graduates{
+}
+.graduates__header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%; 
+}
+  
+.graduates__name {
+text-align: center;
+font-size: 3.5rem;
+font-weight: 600;
+margin-top: 3rem; }
+
+.graduates__border {
+width: 10% !important;
+margin-bottom: 2rem; 
+}
+.graduates__students {
+    display: grid; 
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(2,1fr);
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+}
+.border-bottom {
+    border-bottom: 3px solid #548ca8;
+    width: 20%;
+    transition: all .3s; 
+}

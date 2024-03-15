@@ -1,0 +1,38 @@
+.courses__design {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-content: center;
+    align-items: center;
+    margin-top: 3rem;
+    gap: 2rem;
+    padding: 1.5rem; }
+  
+  .courses__link:link, .courses__link:visited {
+    color: black;
+    text-decoration: none; }
+  
+  .courses__office {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: center;
+    align-items: center;
+    margin-top: 3rem;
+    gap: 2rem;
+    padding: 1.5rem; }
+  
+  .courses__inner {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+  
+  .courses__name {
+    text-align: center;
+    font-size: 3.5rem;
+    font-weight: 600;
+    margin-top: 3rem; }
+
+    .border-bottom {
+        border-bottom: 3px solid #548ca8;
+        width: 20%;
+        transition: all .3s; }
