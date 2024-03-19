@@ -12,7 +12,7 @@
       display: flex;
       align-items: center; 
       @media screen and (max-width:600px){
-        padding: 5rem;
+        padding-top: 5rem;
       }
     }
       .navdark__logo-wrap p {

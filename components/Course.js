@@ -55,7 +55,7 @@ function Course({course}) {
           {/* <img src={`/images/${course.img}`} className={classes.course__img}/> */}
           <ul className={classes.course__list}>
             <li className={classes["course__list-item"]}>Müddət:1 ay</li>
-            <li className={classes["course__list-item"]}>Video təqdim ol unur</li>
+            <li className={classes["course__list-item"]}>Video təqdim olunur</li>
             <li className={classes["course__list-item"]}>Yüksək Keyfiyyət</li>
             <li className={classes["course__list-item"]}>Səmərəli Qiymət</li>
           </ul>
