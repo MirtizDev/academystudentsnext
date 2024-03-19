@@ -36,7 +36,7 @@
       grid-template-columns: repeat(1, 1fr);
     } 
     @media screen and (max-width: 600px) {
-      display: flex;
+      display: block;
     }
   }
   
@@ -51,18 +51,45 @@
     padding: 2rem; 
     @media screen and (max-width: 700px) {
       align-items: center;
+      display: block;
+      padding: 10rem;
     } 
+    @media screen and (max-width:600px) {
+      display: block;
+      height: 500px;
+      padding: 8rem;
+    }
   }
     .contact__info h2 {
-      font-size: 5rem; }
+      font-size: 5rem; 
+      @media screen and (max-width: 700px) {
+        text-align: center;
+        transform: translateY(5rem);
+      } 
+      @media screen and (max-width: 600px) {
+        text-align: center;
+        transform: translateY(0);
+      } 
+    }
   
   .contact__form {
     display: flex;
     flex-direction: column;
-    gap: 2rem; }
+    gap: 2rem;
+
+    @media screen and (max-width: 700px) {
+      margin-top: 5rem;
+    } 
+    @media screen and (max-width: 600px) {
+      margin-top: 0;
+    } 
+    
+  }
     .contact__form div {
       display: flex;
-      flex-direction: column; }
+      flex-direction: column; 
+      
+    }
       .contact__form div label {
         font-size: 1.6rem; }
       .contact__form div input {
@@ -71,9 +98,14 @@
         border: none;
         outline: none;
         font-size: 1.6rem;
+        @media screen and (max-width: 1000px) {
+          width: 85%;
+        } 
         @media screen and (max-width: 700px) {
+          display: block;
           width: 100%;
         } 
+        
        }
     .contact__form button {
       color: #fff;
@@ -85,9 +117,13 @@
       font-size: 1.6rem;
       font-family: 'Poppins', sans-serif;
       padding: 1rem 1.5rem;
+      @media screen and (max-width: 1000px) {
+        width: 85%;
+      } 
       @media screen and (max-width: 700px) {
         width: 100%;
       } 
+      
     }
   
   .contact__list {

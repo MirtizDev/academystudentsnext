@@ -21,7 +21,11 @@ body {
       right: 0;
       width: 10px;
       height: 130vh;
-      background: #808d93; }
+      background: #808d93; 
+      @media screen and (max-width: 600px) {
+        display: none;
+      } 
+    }
     
     #progressBar {
       position: fixed;
@@ -30,17 +34,33 @@ body {
       width: 10px;
       height: 130vh;
       background: #548ca8;
-      z-index: 2; }
+      z-index: 2;
+      @media screen and (max-width: 600px) {
+        display: none;
+      } 
+     }
     
     ::-webkit-scrollbar-track {
-      background: #808d93; }
+      background: #808d93;
+      @media screen and (max-width: 600px) {
+        display: none;
+      } 
+     }
     
     ::-webkit-scrollbar-thumb {
       background: #548ca8;
-      border-radius: 5px; }
+      border-radius: 5px; 
+      @media screen and (max-width: 600px) {
+        display: none;
+      } 
+    }
     
     ::-webkit-scrollbar-thumb:hover {
-      background: #548ca8; }
+      background: #548ca8; 
+      @media screen and (max-width: 600px) {
+        display: none;
+      } 
+    }
 
       .border-bottom {
         border-bottom: 3px solid #548ca8;

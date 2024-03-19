@@ -4,7 +4,11 @@
   right: 0;
   width: 10px;
   height: 130vh;
-  background: #808d93; }
+  background: #808d93; 
+  @media screen and (max-width: 600px) {
+    display: none;
+  } 
+}
 
 #progressBar {
   position: fixed;
@@ -13,5 +17,10 @@
   width: 10px;
   height: 130vh;
   background: #548ca8;
-  z-index: 2; }
+  z-index: 2; 
+  @media screen and (max-width: 600px) {
+    display: none;
+  } 
+}
   
+

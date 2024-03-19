@@ -11,7 +11,13 @@
     border-radius: 2rem;
     opacity: 0;
     transform: translateY(50%);
-    transition: all .7s; }
+    transition: all .7s; 
+
+    @media screen and (max-width: 600px) {
+      padding: 2rem;
+    }
+  
+  }
     .course__1:hover {
       background-color: #00325a !important;
       color: #fff; }

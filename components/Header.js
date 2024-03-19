@@ -6,6 +6,7 @@ import NavDark from './NavDark';
 import Typewriter from 'typewriter-effect';
 import classes from './Header.module.css'
 import SimpleBottomNavigation from './BottomNavigation';
+import NavDarkResponsive from './NavDarkResponsive';
 
 
 function Header() {
@@ -37,9 +38,7 @@ function Header() {
   return (
     <>
       <header className={classes.header} id='home'>
-        {width > 600 && (
-            <NavDark/>
-          )
+        {width > 600 ? (<NavDark/>) : (<NavDarkResponsive/>)
         }
           <video autoPlay muted loop className={classes.header__video} id='video'>
             <source src='/images/video3.mp4' type='video/mp4' />
