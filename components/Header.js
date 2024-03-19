@@ -1,14 +1,14 @@
 import React from 'react'
 import Nav from './Nav'
-import { useRef,useEffect } from 'react'
+import { useRef,useEffect,useState } from 'react'
 import Link  from 'next/link';
 import NavDark from './NavDark';
 import Typewriter from 'typewriter-effect';
 import classes from './Header.module.css'
+import SimpleBottomNavigation from './BottomNavigation';
 
 
 function Header() {
-
 
     useEffect(() => {
       setTimeout(() => {
@@ -17,6 +17,10 @@ function Header() {
           movingDiv.style.opacity = 1;
       }, 300); 
     },[])
+    const width = window.innerWidth
+
+  
+ 
    
 
   // try{
@@ -33,7 +37,10 @@ function Header() {
   return (
     <>
       <header className={classes.header} id='home'>
-        <NavDark/>
+        {width > 600 && (
+            <NavDark/>
+          )
+        }
           <video autoPlay muted loop className={classes.header__video} id='video'>
             <source src='/images/video3.mp4' type='video/mp4' />
           </video>

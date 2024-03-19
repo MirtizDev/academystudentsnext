@@ -13,6 +13,7 @@ import ScrollBar from './ScrollBar'
 import Course from './Course'
 import classes from './Home.module.css'
 import Graduates from './Graduates'
+import SimpleBottomNavigation from './BottomNavigation'
 
 function Home() {
   const [loading, setLoading] = useState(true)
@@ -21,11 +22,12 @@ function Home() {
       setLoading(false)
     }, 2000);
   },[])
+  const width = global.innerWidth
+
   return (
     
     <div className={classes.home__layout}>
         <div className={classes.home__content}>
-          <ScrollBar/>
           {loading ? <LoadingScreen/> : 
           (
             <>
@@ -35,6 +37,7 @@ function Home() {
             <Graduates/>
             <Contact/>
             <Footer/>
+            {width < 600 ? (<SimpleBottomNavigation/>) : (<ScrollBar/>)}
             </>
           )}
         </div>

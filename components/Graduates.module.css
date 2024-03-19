@@ -25,6 +25,14 @@ margin-bottom: 2rem;
     justify-content: center;
     align-items: center;
     gap: 3rem;
+    @media screen and (max-width: 1000px) {
+        grid-template-rows: repeat(3, 1fr);
+        grid-template-columns: repeat(2, 1fr);
+      } 
+    @media screen and (max-width: 500px) {
+    grid-template-rows: repeat(6, 1fr);
+    grid-template-columns: repeat(1, 1fr);
+    }
 }
 .border-bottom {
     border-bottom: 3px solid #548ca8;

@@ -9,6 +9,12 @@
     align-items: center;
     justify-content: center;
     width: 100%; }
+
+    .contact__map{
+      @media screen and (max-width: 600px) {
+        display: none;
+      } 
+    }
   
   .contact__name {
     text-align: center;
@@ -24,7 +30,15 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     justify-content: center;
-    align-items: center; }
+    align-items: center; 
+    @media screen and (max-width: 700px) {
+      grid-template-rows: repeat(2, 1fr);
+      grid-template-columns: repeat(1, 1fr);
+    } 
+    @media screen and (max-width: 600px) {
+      display: flex;
+    }
+  }
   
   .contact__info {
     background-color: #548ca8;
@@ -34,7 +48,11 @@
     flex-direction: column;
     justify-content: center;
     color: #fff;
-    padding: 2rem; }
+    padding: 2rem; 
+    @media screen and (max-width: 700px) {
+      align-items: center;
+    } 
+  }
     .contact__info h2 {
       font-size: 5rem; }
   
@@ -52,7 +70,11 @@
         padding: 1rem;
         border: none;
         outline: none;
-        font-size: 1.6rem; }
+        font-size: 1.6rem;
+        @media screen and (max-width: 700px) {
+          width: 100%;
+        } 
+       }
     .contact__form button {
       color: #fff;
       background-color: #808d93;
@@ -62,7 +84,11 @@
       border-radius: 5px;
       font-size: 1.6rem;
       font-family: 'Poppins', sans-serif;
-      padding: 1rem 1.5rem; }
+      padding: 1rem 1.5rem;
+      @media screen and (max-width: 700px) {
+        width: 100%;
+      } 
+    }
   
   .contact__list {
     list-style: none;
@@ -70,7 +96,8 @@
     flex-direction: column;
     align-items: flex-start;
     justify-content: center;
-    gap: 3rem; }
+    gap: 3rem;
+     }
     .contact__list i {
       margin-right: 1rem; }
   

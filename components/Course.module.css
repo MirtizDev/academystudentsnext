@@ -35,13 +35,21 @@
       color: #fff; }
     .course:hover {
       transform: translateY(-1rem);
-      background-color: rgba(128, 141, 147, 0.4); }
+      background-color: rgba(128, 141, 147, 0.4);
+    }
     .course__name {
       font-size: 2rem;
       font-weight: 400; }
     .course__img {
       width: 40%;
-      border-radius: 2rem; }
+      border-radius: 2rem;
+      @media screen and (max-width: 900px) {
+        width: 45%;
+      }
+      @media screen and (max-width: 600px) {
+        width: 50%;
+      }
+     }
     .course__list {
       list-style: none;
       display: flex;

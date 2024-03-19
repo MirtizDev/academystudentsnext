@@ -11,6 +11,18 @@
     transform: translateY(50%);
     transition: all .7s; 
     position: relative;
+    @media screen and (max-width: 1000px) {
+        height: 30rem;
+        width: 30rem;
+    } 
+    @media screen and (max-width: 800px) {
+        height: 25rem;
+        width: 25rem;
+    } 
+    @media screen and (max-width: 600px) {
+        height: 10rem;
+        width: 10rem;
+    } 
 }
    
 
@@ -67,6 +79,15 @@ transform: translateY(0) !important;
             width: 60%;
             border-radius: 50%;
             background: linear-gradient(to bottom, #fff, #fff); /* Initial gradient colors */
+           
+            @media screen and (max-width: 700px) {
+                height: 25rem;
+                width: 25rem;
+            } 
+            @media screen and (max-width: 600px) {
+                height: 30rem;
+                width: 30rem;
+            } 
           }
           
           .story:hover .story__caption {

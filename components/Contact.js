@@ -10,7 +10,7 @@ function Contact() {
         <div className={`${classes["border-bottom"]} ${classes.contact__border}`}></div>
       </div>
       <div className={classes.contact__inner}>
-        <div className={classes.contact__map}>
+        <div className={classes.contact__map} >
           <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3038.271589353255!2d49.86815831966252!3d40.40283385648596!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40307d4ee9253a65%3A0x29160f1a81905e71!2sNariman%20Narimanov!5e0!3m2!1sen!2saz!4v1698564506808!5m2!1sen!2saz" height='646' style={{border:'none',width:'100%'}}allowFullScreen="" loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe>
         </div>
         <div className={classes.contact__info}>
