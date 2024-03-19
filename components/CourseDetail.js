@@ -19,7 +19,7 @@ function CourseDetail({data}) {
           <Nav/>
           <div className="container">
             <div className={classes["course-detail"]}>
-            <Image src={`/images/${data[0].img}`} className={classes["course-detail__img"]} width={270} height={270}/>
+            <Image src={`/public/images/${data[0].img}`} className={classes["course-detail__img"]} width={270} height={270}/>
               <div className={classes["course-detail__content"]}>
                 <h2 className={classes["course-detail__name"]}>{data[0].name}</h2>
                 <p className={classes["course-detail__description"]}>{data[0].description}</p>
