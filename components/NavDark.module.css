@@ -24,6 +24,9 @@
         @media screen and (max-width:600px){
           font-size: 3rem;
         }
+        @media screen and (max-width: 400px) {
+          font-size: 2rem;
+        } 
       }
         .navdark__logo-wrap p span {
           margin-right: 1rem;
@@ -32,6 +35,9 @@
           @media screen and (max-width:600px){
             font-size: 3rem;
           }
+          @media screen and (max-width: 400px) {
+            font-size: 2rem;
+          } 
          }
     .navdark__item-wrap {
       display: flex;
@@ -42,6 +48,9 @@
       @media screen and (max-width:600px){
         width: 10rem;
       }
+      @media screen and (max-width: 400px) {
+        font-size: 7rem;
+      } 
     }
     .navdark__item p {
       font-size: 1.6rem;

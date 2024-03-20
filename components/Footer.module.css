@@ -6,7 +6,9 @@
   display: flex;
 justify-content: center;
 align-items: center;
-margin-bottom: 7rem;
+@media screen and (max-width:600px) {
+  margin-bottom: 7rem;
+}
 }
     .footer .container {
       height: 100%; 

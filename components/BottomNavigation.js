@@ -10,10 +10,10 @@ import ConnectWithoutContactIcon from '@mui/icons-material/ConnectWithoutContact
 import LoginIcon from '@mui/icons-material/Login';
 
 export default function SimpleBottomNavigation() {
-  const [value, setValue] = React.useState(0);
+  const [value, setValue] = React.useState(0); 
 
   return (
-        <Paper className='bottomNavigation' sx={{ position: 'fixed', bottom: 0, left: 0, right: 0,zIndex:100 }} elevation={5}>
+        <Paper className='bottomNavigation' sx={{ position: 'fixed', bottom: 0, left: 0, right: 0,zIndex:100 }} elevation={3}>
         <BottomNavigation
           showLabels
           value={value}
@@ -21,7 +21,8 @@ export default function SimpleBottomNavigation() {
             setValue(newValue);
           }}
         >
-            <Link href='#start'>
+          <div className='bottomNavigation__inner'>
+          <Link href='#start'>
                 <BottomNavigationAction label="Ana Səhifə" icon={<HomeIcon />} className='bottomNavigation__item'/>
             </Link>
             <Link href='#kurslar'>
@@ -36,6 +37,8 @@ export default function SimpleBottomNavigation() {
             <Link href='/soon'>
                 <BottomNavigationAction label="Hesab" icon={<LoginIcon />} className='bottomNavigation__item'/>
             </Link>
+          </div>
+            
         </BottomNavigation>
       </Paper>
   );

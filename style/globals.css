@@ -113,13 +113,17 @@ body {
       }
 
 
-      .bottomNavigation{   
+      .bottomNavigation{  
+        padding: 1rem; 
         font-size: 2rem;
-        display: flex;
         width: 100%;
-        justify-content: center;
-        align-items: center;
-        gap: 1rem;
+    }
+
+    .bottomNavigation__inner{
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: space-evenly;
     }
     
     .bottomNavigation__item{
@@ -127,11 +131,17 @@ body {
         text-decoration: none ;
         svg{
           font-size: 4rem;
+          @media screen and (max-width: 400px) {
+            font-size: 3rem;
+          } 
         }
         span{
           color: black;
           opacity: 1;
           font-size: 2rem;
+          @media screen and (max-width: 400px) {
+            font-size: 1.6rem;
+          } 
         }
         
     }
