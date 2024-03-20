@@ -3,6 +3,10 @@ import Nav from './Nav'
 import classes from './Contact.module.css'
 
 function Contact() {
+
+  const handleClick = () => {
+    window.location.relaod()
+  }
   return (
     <div className={classes.contact} id='contact'>
       <div className={classes.contact__header}>
@@ -37,7 +41,7 @@ function Contact() {
               <label htmlFor="Email">Email</label>
               <input type="tel" id='Email' name='Email' />
             </div>
-            <button type='submit'>Göndər</button>
+            <button type='button' onClick={handleClick}>Göndər</button>
           </form>
         </div>
       </div>

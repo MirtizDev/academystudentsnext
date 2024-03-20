@@ -12,13 +12,15 @@ import NavDark from './NavDark';
 import Image from 'next/image';
 import NavResponsive from './NavResponsive';
 import FooterWithoutMargin from './FooterWithoutMargin';
+import ArrowBackIcon from '@mui/icons-material/ArrowBack';
+import Link from 'next/link';
 function CourseDetail({data}) {
   // console.log(data[0].img)
   const width = global.innerWidth
   return (
     <div>
-       
-        <div>
+        <div className='navResponsive'>
+          <Link href='/' className='navResponsiveBackIcon'><ArrowBackIcon/></Link>
         {width > 600 ? (<Nav/>) : (<NavResponsive/>)
         }
           <div className="container">

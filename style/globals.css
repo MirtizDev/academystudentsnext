@@ -146,3 +146,16 @@ body {
         
     }
         
+.navResponsive{
+  position: relative;
+}
+
+.navResponsiveBackIcon{
+  position: absolute;
+  top: 3%;
+  left: 4%;
+  svg{
+    color: black;
+    font-size: 4rem;
+  }
+}
