@@ -5,7 +5,9 @@
     align-items: center;
     margin-top: 3rem;
     gap: 2rem;
-    padding: 1.5rem; }
+    padding: 1.5rem; 
+  
+  }
   
   .courses__link:link, .courses__link:visited {
     color: black;
@@ -18,7 +20,17 @@
     align-items: center;
     margin-top: 3rem;
     gap: 2rem;
-    padding: 1.5rem; }
+    padding: 1.5rem;
+
+    @media screen and (max-width: 600px) {
+      gap: 3rem;
+      margin-bottom: 2rem;
+    }
+    @media screen and (max-width: 500px) {
+      grid-template-rows: repeat(3, 1fr);
+      grid-template-columns: repeat(1, 1fr);
+    }
+   }
   
   .courses__inner {
     display: flex;

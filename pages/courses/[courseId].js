@@ -7,10 +7,13 @@ function Course() {
     const router = useRouter();
     const exactId = router.query.courseId;
     const exactCourse = AllCourses.filter((course) => {
-      if(course.id === parseInt(exactId)){
+      if(course.id == exactId){
         return course;
       }
-    })
+    }) 
+    if(!exactId || !exactCourse){
+      return (<h1 style={{textAlign:'center'}}>Loading...</h1>)
+    } 
   return (
     <div>
         <CourseDetail data={exactCourse}/>

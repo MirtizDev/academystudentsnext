@@ -10,13 +10,17 @@ import OtherOfficeCourses from './OtherOfficeCourses';
 import classes from './CourseDetail.module.css'
 import NavDark from './NavDark';
 import Image from 'next/image';
+import NavResponsive from './NavResponsive';
+import FooterWithoutMargin from './FooterWithoutMargin';
 function CourseDetail({data}) {
   // console.log(data[0].img)
+  const width = global.innerWidth
   return (
     <div>
        
         <div>
-          {/* <Nav/>
+        {width > 600 ? (<Nav/>) : (<NavResponsive/>)
+        }
           <div className="container">
             <div className={classes["course-detail"]}>
               {data[0].img && (<Image src={`/images/${data[0].img}`} className={classes["course-detail__img"]} width={270} height={270}/>)}
@@ -27,9 +31,9 @@ function CourseDetail({data}) {
               </div>
             </div>
           </div>
-          {data.id == 1 || data.id == 2 || data.id == 3 || data.id == 4 ? (<OtherDesignCourses/>) : (<OtherOfficeCourses/> )} */}
+          {(data[0].id == 1 || data[0].id == 2 || data[0].id == 3 || data[0].id == 4) ? (<OtherDesignCourses/>) : (<OtherOfficeCourses/> )}
           
-          <Footer/>
+          <FooterWithoutMargin/>
         </div>
          </div>
   );

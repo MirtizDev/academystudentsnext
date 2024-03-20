@@ -2,24 +2,56 @@
     padding: 2rem;
     display: flex;
     justify-content: space-between;
-    align-items: center; }
+    align-items: center; 
+    @media screen and (max-width:600px){
+      display: flex;
+      justify-content: center;
+  }
+  }
     .nav__logo-wrap {
       display: flex;
-      align-items: center; }
+      align-items: center; 
+      @media screen and (max-width:600px){
+        display: flex;
+        justify-content: center;
+        padding-top: 5rem;
+      }
+    }
       .nav__logo-wrap p {
         font-size: 2.0rem;
         margin-left: 2rem;
-        color: black; }
+        color: black; 
+        @media screen and (max-width:600px){
+          font-size: 3rem;
+        }
+        @media screen and (max-width: 400px) {
+          font-size: 2rem;
+        } 
+      }
         .nav__logo-wrap p span {
           margin-right: 1rem;
           font-size: 2rem;
-          line-height: 1.5; }
+          line-height: 1.5; 
+          @media screen and (max-width:600px){
+            font-size: 3rem;
+          }
+          @media screen and (max-width: 400px) {
+            font-size: 2rem;
+          } 
+        }
     .nav__item-wrap {
       display: flex;
       list-style: none;
       gap: 3rem; }
     .nav__logo {
-      width: 8rem; }
+      width: 8rem; 
+      @media screen and (max-width:600px){
+        width: 10rem;
+      }
+      @media screen and (max-width: 400px) {
+        font-size: 7rem;
+      } 
+    }
     .nav__item p {
       font-size: 1.6rem; }
     .nav__item a:visited,

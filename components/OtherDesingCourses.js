@@ -12,8 +12,8 @@ function OtherDesignCourses() {
     
       <div className={`${classes.courses} container`} id='kurslar'>
       <div className={classes.courses__inner}>
-        <p className={classes.courses__name}>Digər Qrafik Dizayn Kursları</p>
-        <div className={`${classes.courses__name} ${classes.course__border}`}></div>
+        <p className={classes.courses__name} style={{marginBottom:'10px'}}>Digər Qrafik Dizayn Kursları</p>
+        <div className={classes["border-bottom"]}></div>
         <div className={classes.courses__design}>
             {data1.map((course,index) => {
                 return <Course key={index} course={course}/>
