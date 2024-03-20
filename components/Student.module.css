@@ -46,9 +46,12 @@
 .student__link {
     text-decoration: none;
     color: currentColor; 
+    opacity: 0;
+    transform: translateY(50%);
+    transition: all .7s; 
 }
 
-.student.show {
+.student__link.show {
 opacity: 1 !important;
 filter: blur(0) !important;
 transform: translateY(0) !important; 
