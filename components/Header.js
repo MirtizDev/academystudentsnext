@@ -44,7 +44,7 @@ function Header() {
             <source src='/images/video3.mp4' type='video/mp4' />
           </video>
           <div className={classes.header__content} id='content'>
-              <h1>Academy Stundents-ə Xoş Gəlmisiniz</h1>
+              <h1>Academy Students-ə Xoş Gəlmisiniz</h1>
               <div>
                 <p><Typewriter
                   options={{
