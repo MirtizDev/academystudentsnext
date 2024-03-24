@@ -22,7 +22,8 @@
         width: 30rem;
       } 
       @media screen and (max-width: 500px) {
-        width: 35rem;
+        width: 20rem;
+        height: 20rem;
       } 
     }
     .course-detail__content {
