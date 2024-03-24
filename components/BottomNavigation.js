@@ -22,7 +22,7 @@ export default function SimpleBottomNavigation() {
           }}
         >
           <div className='bottomNavigation__inner'>
-          <Link href='#start'>
+          <Link href='#start1'>
                 <BottomNavigationAction label="Ana Səhifə" icon={<HomeIcon />} className='bottomNavigation__item'/>
             </Link>
             <Link href='#kurslar'>
