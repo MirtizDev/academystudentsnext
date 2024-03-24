@@ -1,14 +1,15 @@
 .footer {
     background-color: #001432;
     color: #fff;
-    height: 17vh;
+    height: 13rem;
     width: 100%;
-  display: flex;
-justify-content: center;
-align-items: center;
-@media screen and (max-width:600px) {
-  margin-bottom: 7rem;
-}
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    @media screen and (max-width:600px) {
+    margin-bottom: 7rem;
+    height: 16rem;
+  }
 }
     .footer .container {
       height: 100%; 
