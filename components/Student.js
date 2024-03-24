@@ -9,7 +9,7 @@ function Student({student}) {
   useEffect(() => {
     const options = {
       root: null,
-      rootMargin: '0px',
+      rootMargin: '5px',
       threshold: 0,
     };
     const callback = (entries, observer) => {
