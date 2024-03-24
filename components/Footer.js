@@ -1,13 +1,14 @@
 import React from 'react'
 import classes from './Footer.module.css'
 import Image from 'next/image'
+import Link from 'next/link'
 
 function Footer() {
   return (
     <div className={classes.footer}>
         <div className="container">
             <div className={classes.footer__inner}>
-                <p className={classes.footer__text}>Designed and powered by Murtuzov Huseyn</p>
+                <p className={classes.footer__text}>Designed and powered by  <span><Link href='https://github.com/MirtizDev' style={{textDecoration:'none',color:'#548ca8'}}>Murtuzov Huseyn</Link></span></p>
                 <div className={classes["footer__img-wrap"]}>
                     <Image src="/images/aclogo.png" alt="Academy students logo" className={classes.footer__img} width={60} height={60}/>
                     <img />

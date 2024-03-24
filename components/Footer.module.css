@@ -20,10 +20,12 @@ align-items: center;
       align-items: center;
       height: 100%; }
     .footer__text {
-      display: flex;
-      justify-content: center;
+      text-align: center;
       font-size: 1.4rem;
-      font-weight: 300; }
+      font-weight: 300; 
+
+    }
+
     .footer__img-wrap {
       width: 100%;
       display: flex;
