@@ -11,9 +11,9 @@
     height: 16rem;
   }
 }
-    .footer .container {
+    /* .footer .container {
       height: 100%; 
-    }
+    } */
     .footer__inner {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
@@ -44,7 +44,8 @@
       display: flex;
       align-items: center;
       justify-content: center;
-      gap: 3rem; }
+      gap: 3rem; 
+    }
     .footer__link:visited, .footer__link:link {
       text-decoration: none;
       color: #fff;

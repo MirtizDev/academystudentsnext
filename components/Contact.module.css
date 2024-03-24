@@ -1,3 +1,5 @@
+.contact{}
+
 .contact__header {
     display: flex;
     flex-direction: column;
@@ -52,7 +54,7 @@
     } 
     @media screen and (max-width:600px) {
       display: block;
-      height: 500px;
+      height: 60rem;
       padding: 8rem;
     }
   }
