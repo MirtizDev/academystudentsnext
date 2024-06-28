@@ -134,5 +134,11 @@ export const graduates = [
         name:"İbrahimov Rüfət",
         link:"https://www.instagram.com/rfdesign_s/",
         img:"rfdesign.jpg"
+    },
+    {
+        id:6,
+        name:"Niyədə Yox?",
+        link:"№contact",
+        img:"whynot.jpg"
     }
 ]
