@@ -5,15 +5,14 @@ const IntersectionObserverComponent = () => {
 
   useEffect(() => {
     const options = {
-      root: null, // Root element (viewport)
+      root: null, 
       rootMargin: '0px',
-      threshold: 0.5, // Görünürlük yüzdesi
+      threshold: 0.5, 
     };
 
     const callback = (entries, observer) => {
       entries.forEach(entry => {
         if (entry.isIntersecting) {
-          // Element görünür hale geldiğinde yapılacak işlemler buraya gelir.
           console.log('Element is visible!');
         }
       });

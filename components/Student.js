@@ -44,7 +44,7 @@ function Student({student}) {
       <Link href={student.link} className={classes.student__link} ref={targetRef} target='_blank'>
           <div class={classes.story}>
               <figure class={classes.story__shape}>
-                  <Image src={`/images/${student.img}`} alt="Person on a tour" class={classes.story__img} width={200} height={200}/>
+                  <Image src={`/images/${student.img}`}  class={classes.story__img} width={200} height={200}/>
                   <figcaption class={classes.story__caption}>{student.name}</figcaption>
               </figure>
           </div>
